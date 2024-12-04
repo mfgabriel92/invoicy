@@ -1,4 +1,6 @@
-﻿import {
+﻿import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
   Table,
   TableBody,
   TableCell,
@@ -6,16 +8,14 @@
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { PlusCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Dashboard() {
   return (
     <main className="mx-auto flex h-full max-w-5xl flex-col gap-8 p-8">
       <div className="flex items-end justify-between">
-        <h1 className="text-5xl font-bold">Dashboard</h1>
+        <h2 className="text-5xl font-bold">Dashboard</h2>
         <Button asChild variant="ghost">
           <Link href="/invoices/new">
             <PlusCircle />
